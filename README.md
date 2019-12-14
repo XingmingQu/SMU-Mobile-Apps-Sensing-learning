@@ -9,6 +9,8 @@ Video: https://drive.google.com/drive/folders/1Sf1LmJClTfwqpBpLC0zxEJk553I-cCrx?
 Hi teachers! Are you still annoyed by checking attendance everyday in the class? Do you want to save this time so that you can spend more time on the lecture?
 “Check It Out” is an iOS app that helps you to check students’ attendance. With this app, you can simply set up an iphone at the entrance of the classroom and it will perform face recognition to check whether a student attends the class or not when a student is passing the camera. Don’t worry about some “smarty pants” might use a photo to fool the app. We do perform live detection. At the end of the day, the teacher is able to see which students attended the class and which students did not.
 
+![Final](Screenshots/icon.jpg)
+
 Video: https://drive.google.com/file/d/1TH1Inos24XgyLqcGxTcJ8tJyZ5aiJRAJ/view?usp=sharing
 
 
