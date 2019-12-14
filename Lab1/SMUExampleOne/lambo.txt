@@ -1,0 +1,20 @@
+Car type	Coupe
+Curb weight	1525-1769 kg (3362-3900 lbs)
+Power / weight	446 ps (440 bhp) / t
+Torque / weight	410 Nm (302 lb-ft) / t
+Introduced	2016
+Origin country	Italy
+Average fuel consumption	30.0-13.1 l/100 km (8-18 mpg US / 9-22 mpg UK)
+Price in Europe	€392,600 - €431,240
+Noise @ idle	60 dB
+Noise @ 70 mph	73 dB
+Views	98.4k
+Submitted by	Thiago_Lins
+Engine type	V12
+Displacement	6.5 l (397 ci)
+Power	750 ps (740 bhp / 552 kw) @ 8400 rpm
+Torque	690 Nm (509 lb-ft) @ 5500 rpm
+Power / liter	115 ps (114 hp)
+Efficiency	39 PS per l/100 km
+Power / €5000	9 ps
+Layout	middle engine, all wheel drive

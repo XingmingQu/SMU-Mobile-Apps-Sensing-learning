@@ -1,0 +1,37 @@
+Front Suspension
+Independent front suspension
+Front Tires
+245/35ZR20
+Power Steering
+Yes
+Rear Suspension
+Independent rear suspension
+Rear Tires
+305/30ZR20 rear performance tires
+Wheel Type
+20-inch alloy wheels
+
+DriveTrain
+Rear-wheel drive
+Engine.Name
+4.5L V8 DOHC 32-valve
+Traction Control
+Yes
+Transmission
+7-speed automated sequential transmission with manual mode
+Transmission Paddle Shift
+Yes
+
+Curb Weight
+1395 kg
+Fuel Tank Capacity
+86 L
+Height
+1203 mm
+Length
+4571 mm
+Wheelbase
+2651 mm
+Width
+1951 mm
+

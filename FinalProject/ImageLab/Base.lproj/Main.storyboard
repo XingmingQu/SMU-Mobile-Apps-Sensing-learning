@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="33K-jB-yEj">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Face Recognation-->
+        <scene sceneID="fxX-NW-n83">
+            <objects>
+                <viewController id="gBJ-Ga-IQM" customClass="ModuleAViewController" customModule="ImageLab" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rjB-ia-1KY"/>
+                        <viewControllerLayoutGuide type="bottom" id="52m-1W-Y1T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7aw-bQ-5L4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xm2-cv-eW6">
+                                <rect key="frame" x="20" y="44" width="104" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LAI-Fr-D6y"/>
+                                    <constraint firstAttribute="width" constant="104" id="ir5-BD-06d"/>
+                                </constraints>
+                                <state key="normal" title="Switch Camera"/>
+                                <connections>
+                                    <action selector="switchCamera:" destination="gBJ-Ga-IQM" eventType="touchUpInside" id="bcF-Br-29i"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading Model....." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="THe-KN-YCR">
+                                <rect key="frame" x="50" y="734.5" width="314" height="27.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="THe-KN-YCR" firstAttribute="leading" secondItem="7aw-bQ-5L4" secondAttribute="leadingMargin" constant="30" id="9qC-RE-EVq"/>
+                            <constraint firstItem="xm2-cv-eW6" firstAttribute="top" secondItem="rjB-ia-1KY" secondAttribute="bottom" id="FuA-zy-pgR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="THe-KN-YCR" secondAttribute="trailing" constant="30" id="GCh-RF-MFh"/>
+                            <constraint firstItem="52m-1W-Y1T" firstAttribute="top" secondItem="THe-KN-YCR" secondAttribute="bottom" constant="51" id="HXC-gm-uVp"/>
+                            <constraint firstItem="xm2-cv-eW6" firstAttribute="leading" secondItem="7aw-bQ-5L4" secondAttribute="leadingMargin" id="lgi-g2-fzE"/>
+                            <constraint firstItem="THe-KN-YCR" firstAttribute="centerX" secondItem="7aw-bQ-5L4" secondAttribute="centerX" id="xd5-DS-kyc"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Face Recognation" id="R6k-X3-ieb"/>
+                    <connections>
+                        <outlet property="resultLabel" destination="THe-KN-YCR" id="cx8-1w-GtJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BuC-GW-OX3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1111.5942028985507" y="-229.01785714285714"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="DMq-nm-Xfy">
+            <objects>
+                <tabBarController id="33K-jB-yEj" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="btF-rD-i1Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="gBJ-Ga-IQM" kind="relationship" relationship="viewControllers" id="IMg-zt-3Ib"/>
+                        <segue destination="ivU-Ub-oKS" kind="relationship" relationship="viewControllers" id="M5a-v7-Y4v"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ADT-CG-bIU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="195" y="94"/>
+        </scene>
+        <!--Check List-->
+        <scene sceneID="RRI-Mb-3eT">
+            <objects>
+                <viewController id="ivU-Ub-oKS" customClass="CheckListViewController" customModule="ImageLab" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CgK-AX-MBM"/>
+                        <viewControllerLayoutGuide type="bottom" id="tCr-V7-xsR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b19-YB-aB3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9n-1m-dCw">
+                                <rect key="frame" x="149" y="755" width="116" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="geJ-aA-sWE"/>
+                                    <constraint firstAttribute="width" constant="116" id="ka0-Y4-c0I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetList:" destination="ivU-Ub-oKS" eventType="touchUpInside" id="0pw-3j-mTO"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Init" translatesAutoresizingMaskIntoConstraints="NO" id="Ugo-PF-JTr">
+                                <rect key="frame" x="30" y="107" width="354" height="616"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="616" id="mp9-Xb-jrQ"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uss-eX-trg">
+                                <rect key="frame" x="40" y="52" width="334" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="R9n-1m-dCw" firstAttribute="centerX" secondItem="b19-YB-aB3" secondAttribute="centerX" id="Jah-AN-h0i"/>
+                            <constraint firstItem="uss-eX-trg" firstAttribute="top" secondItem="CgK-AX-MBM" secondAttribute="bottom" constant="8" id="Mfc-VD-2HK"/>
+                            <constraint firstItem="Ugo-PF-JTr" firstAttribute="top" secondItem="uss-eX-trg" secondAttribute="bottom" constant="19" id="TEP-Kp-god"/>
+                            <constraint firstItem="Ugo-PF-JTr" firstAttribute="leading" secondItem="b19-YB-aB3" secondAttribute="leadingMargin" constant="10" id="WfF-hr-cW4"/>
+                            <constraint firstItem="R9n-1m-dCw" firstAttribute="top" secondItem="Ugo-PF-JTr" secondAttribute="bottom" constant="32" id="muU-Tn-mto"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uss-eX-trg" secondAttribute="trailing" constant="20" id="noO-N6-iyi"/>
+                            <constraint firstItem="Ugo-PF-JTr" firstAttribute="centerX" secondItem="b19-YB-aB3" secondAttribute="centerX" id="rHz-Bb-Hzv"/>
+                            <constraint firstItem="uss-eX-trg" firstAttribute="leading" secondItem="b19-YB-aB3" secondAttribute="leadingMargin" constant="20" id="s2t-Ac-DCD"/>
+                            <constraint firstItem="tCr-V7-xsR" firstAttribute="top" secondItem="R9n-1m-dCw" secondAttribute="bottom" constant="16" id="xji-ET-6pH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ugo-PF-JTr" secondAttribute="trailing" constant="10" id="yhX-jw-HOA"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Check List" id="FbY-gY-ipN"/>
+                    <connections>
+                        <outlet property="checkListTestView" destination="Ugo-PF-JTr" id="e7x-97-GwJ"/>
+                        <outlet property="resertButton" destination="R9n-1m-dCw" id="eab-WB-hJY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wHK-jW-BEx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1111.5942028985507" y="451.33928571428567"/>
+        </scene>
+    </scenes>
+</document>

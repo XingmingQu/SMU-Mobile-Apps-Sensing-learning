@@ -1,0 +1,22 @@
+Engine Type
+In-Line 4-Cylinder with Turbocharger
+Boost Pressure
+23.2 psi
+Displacement
+1996 cc
+Horsepower (SAE net)
+306 @ 6500 rpm
+Torque (SAE net)
+295 lb-ft @ 2500-4500 rpm
+Redline
+7000 rpm
+Bore and Stroke
+86.0 x 85.9
+Compression Ratio
+9.8 : 1
+Valve Train
+16-Valve DOHC VTEC
+3-Mode Drive System (Comfort/Sport/+R)
+Direct Injection
+Drive-by-Wire Throttle System
+Water-Cooled Oil Cooler

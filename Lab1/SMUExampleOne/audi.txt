@@ -1,0 +1,29 @@
+Engine Name	
+Engine: V6 Turbo 2.9 Liter	
+
+Transmission Name	
+Tiptronic 8 Speed Automatic Mode Select with Manual Mode
+
+Trim	
+quattro Coupe	
+
+Class	
+Premium Performance Car
+
+Horsepower	
+444@5700	
+
+Standard MPG	
+18 City / 27 Hwy
+
+Body Style	
+Coupe	
+
+Drivetrain	
+AWD
+
+Fuel Type	
+Unleaded Premium
+	
+Seating Capacity (Std/Max)	
+4/4

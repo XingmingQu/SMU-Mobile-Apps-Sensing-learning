@@ -1,0 +1,6 @@
+framework module Pods_ImageLabTests {
+  umbrella header "Pods-ImageLabTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
