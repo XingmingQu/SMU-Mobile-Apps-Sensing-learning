@@ -43,8 +43,11 @@ In the second module, we play a settable (via a slider or setter control) inaudi
 ![Lab2 Screenshot](Screenshots/Lab2.png)
 
 
-## Lab 1 - BuildMe
-This app helps users track their workout progress.
+## Lab 1 - iOS Interface Building
+In our first lab, we create a basic Car Gallery app.
+
+In this app, you can browse different cars. By clicking the car you want to take a look at, you will be directed to a new page where you can see the specifics of the car, try the Estimate Monthly Payment Calculator.
+You can also view Car brands and their history!  
 
 
 ![Lab1 Screenshot](Screenshots/Lab1.png)
